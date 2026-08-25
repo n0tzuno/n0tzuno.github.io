@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Downloading...</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1E1E1E;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        .container {
+            background-color: #1e1e1e;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+            max-width: 400px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #4caf50; /* Success green */
+        }
+        p {
+            color: #aaaaaa;
+            font-size: 16px;
+            margin-bottom: 25px;
+        }
+        .fallback-link {
+            color: #2196f3;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .fallback-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Your download has started!</h1>
+        <p>Because this file is large (4GB), please keep this tab open while your browser processes the transfer.</p>
+        <p>If your download didn't start automatically, <a class="fallback-link" href="RoomTopia2023WORKINGGG.rar" download>click here to try again</a>.</p>
+    </div>
+
+    <script>
+        // This runs automatically the exact millisecond the page loads
+        window.addEventListener('DOMContentLoaded', () => {
+            // Create a temporary hidden link element
+            const downloadLink = document.createElement('a');
+            
+            // Point it directly to the RAR file in your website folder
+            downloadLink.href = 'RoomTopia2023WORKINGGG.rar'; 
+            
+            // Force the browser to download instead of trying to open it
+            downloadLink.download = 'RoomTopia2023WORKINGGG.rar'; 
+            
+            // Append to body, trigger the click, and remove it instantly
+            document.body.appendChild(downloadLink);
+            downloadLink.click();
+            document.body.removeChild(downloadLink);
+        });
+    </script>
+
+</body>
+</html>
