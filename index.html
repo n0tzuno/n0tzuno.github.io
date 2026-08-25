@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Download File</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-family: Arial, sans-serif;
+
+            background: #f4f5f7;
+            color: #222;
+        }
+
+        .download-box {
+            width: 90%;
+            max-width: 650px;
+
+            background: white;
+
+            border: 1px solid #ddd;
+            border-radius: 6px;
+
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+
+            padding: 35px;
+        }
+
+        .file-name {
+            font-size: 24px;
+            font-weight: 600;
+
+            margin-bottom: 8px;
+        }
+
+        .file-info {
+            color: #777;
+            font-size: 14px;
+
+            margin-bottom: 30px;
+        }
+
+        .download-button {
+            display: block;
+
+            width: 100%;
+
+            padding: 16px;
+
+            background: #1683e6;
+            color: white;
+
+            text-align: center;
+            text-decoration: none;
+
+            border-radius: 4px;
+
+            font-size: 17px;
+            font-weight: bold;
+
+            transition: background 0.2s;
+        }
+
+        .download-button:hover {
+            background: #086fc9;
+        }
+
+        .download-button:active {
+            transform: translateY(1px);
+        }
+
+        .footer {
+            text-align: center;
+
+            color: #999;
+
+            font-size: 12px;
+
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="download-box">
+
+        <div class="file-name">
+            latest upd
+        </div>
+        
+
+        <div class="file-info">
+            RTOPIALAUNCHER.rar • 2,328 KB
+            
+        </div>
+
+        <!--
+            PUT YOUR FILE IN THE SAME FOLDER AS THIS HTML
+            AND CHANGE THE FILE NAME BELOW.
+        -->
+
+        <a
+            class="download-button"
+            href="RTOPIALAUNCHER.rar"
+            download
+        >
+            ↓ &nbsp; Download
+        </a>
+
+        <div class="footer">
+            YOUR DOWNLOAD IS READY NOW.
+        </div>
+
+    </div>
+
+</body>
+</html>
